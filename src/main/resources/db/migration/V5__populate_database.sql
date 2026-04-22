@@ -12,6 +12,7 @@ VALUES ('Fruits'),
 INSERT INTO products (name, price, description, category_id)
 VALUES
 -- Fruits
+
 ('Banana (1kg)', 2.99, 'Fresh Cavendish bananas, rich in potassium and perfect for daily snacks.', 1),
 
 -- Vegetables
