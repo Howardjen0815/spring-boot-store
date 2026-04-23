@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 public class PaymentSecurityRules implements SecurityRules {
     @Override
     public void configure(AuthorizeHttpRequestsConfigurer<HttpSecurity>.AuthorizationManagerRequestMatcherRegistry registry) {
-        registry.requestMatchers(HttpMethod.POST,"/checkout").permitAll();
+        registry.requestMatchers(HttpMethod.POST,"/checkout").permitAll()
+                .requestMatchers(HttpMethod.POST,"/checkout/**").permitAll();
+
     }
 }
